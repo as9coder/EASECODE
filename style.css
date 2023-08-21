@@ -1,0 +1,356 @@
+/* Style the Part 1: Introduction section */
+#introduction {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#introduction ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#introduction ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#introduction a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#introduction a:hover {
+    text-decoration: none;
+}
+
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and default font */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style the logo */
+.logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the hamburger menu icon for smaller screens */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff;
+    height: 2px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Media query for responsive navigation */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+/* Style the Part 2: About Me section */
+#about-me {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    text-align: center;
+}
+
+#about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-me img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+#about-me p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#about-me ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#about-me ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#about-me a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#about-me a:hover {
+    text-decoration: underline;
+}
+
+li{
+    list-style: none;
+}
+
+/* Style the Part 3: Featured Projects section */
+#featured-projects {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+#featured-projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+/* Additional content styles */
+#featured-projects h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #333;
+}
+
+#featured-projects ul, #featured-projects ol {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: #555;
+}
+
+#featured-projects a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#featured-projects a:hover {
+    text-decoration: underline;
+}
+
+/* Style the Part 4: Code Snippets section */
+#code-snippets {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: left;
+}
+
+#code-snippets h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.code-snippet {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.code-snippet h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+pre {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Monaco, monospace;
+}
+
+/* Additional content styles */
+#code-snippets p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#code-snippets a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#code-snippets a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style the Part 5: Contact Me section */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+/* Style social media links */
+#contact ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Increase padding for navbar text */
+.nav-links a {
+  
+    display: block; /* Ensure the entire link area is clickable */
+    padding: 10px 30px; /* Adjust the padding values as needed */
+    text-align: center; /* Center-align the text */
+}
